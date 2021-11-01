@@ -11,5 +11,6 @@
     ],
     "name": "PWA-application",
     "short_name": "PWA",
-    "start_url": "/"
+    "start_url": "/",
+    "scope": "/"
 }
