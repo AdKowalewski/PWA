@@ -5,8 +5,7 @@ self.addEventListener('install', (e) => {
         './style1.css',
         './style2.css',
         './style3.css',
-        './index.js',
-        './icon/example-icon.png'
+        './index.js'
       ])),
     );
   });
