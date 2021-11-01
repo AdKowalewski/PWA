@@ -1,0 +1,15 @@
+{
+    "background_color": "black",
+    "description": "blabla",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "icon/example-icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "PWA-application",
+    "short_name": "PWA",
+    "start_url": "/index.html"
+}

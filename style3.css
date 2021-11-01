@@ -1,0 +1,81 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    text-align: center;
+    border: black solid 5px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "A B C C"
+    "D D D E"
+    "F G G G";
+}
+
+.grid-item-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: A;
+    border: black solid 5px;
+    background-color: coral;
+}
+
+.grid-item-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: B;
+    border: black solid 5px;
+    background-color: darkblue;
+}
+
+.grid-item-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: C;
+    border: black solid 5px;
+    background-color: darkgreen;
+}
+
+.grid-item-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: D;
+    border: black solid 5px;
+    background-color: darkorchid;
+}
+
+.grid-item-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: E;
+    border: black solid 5px;
+    background-color: yellowgreen;
+}
+
+.grid-item-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: F;
+    border: black solid 5px;
+    background-color: yellow;
+}
+
+.grid-item-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: G;
+    border: black solid 5px;
+    background-color: orangered;
+}
