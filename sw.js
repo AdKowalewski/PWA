@@ -1,6 +1,6 @@
 self.addEventListener('install', (e) => {
     e.waitUntil(
-      caches.open('').then((cache) => cache.addAll([
+      caches.open('iksde').then((cache) => cache.addAll([
         './index.html',
         './style1.css',
         './style2.css',
