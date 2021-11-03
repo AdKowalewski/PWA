@@ -29,7 +29,7 @@
                 alert('Hello there!');
             }, 5000);
         </script> -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             let element = document.getElementById('modal');
             element.style.visibility = 'hidden';
 
@@ -39,6 +39,23 @@
 
             function closeFunc() {
                 element.style.visibility = 'hidden';
+            }
+        </script> -->
+        <script>
+            function showNotification() {
+                const notification = new Notification("Hello there!", {
+                    body: "Hello there!"
+                })
+            }
+
+            if(Notification.permission === "granted"){
+                showNotification();
+            } else if (Notification.permission === "denied") {
+                Notification.requestPermission().then(permission => {
+                    if(permission === "granted"){
+                        showNotification();
+                    }
+                })
             }
         </script>
     </body>
