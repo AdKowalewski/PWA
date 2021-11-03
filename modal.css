@@ -1,0 +1,8 @@
+.modal {
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    background-color: white;
+    padding: 20px;
+    /* visibility: hidden; */
+}

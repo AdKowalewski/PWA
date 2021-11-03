@@ -6,11 +6,16 @@
         <link media="screen and (min-width: 200px)" rel="stylesheet" href="style1.css">
         <link media="screen and (min-width: 300px)" rel="stylesheet" href="style2.css">
         <link media="screen and (min-width: 400px)" rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="modal.css">
         <script src="index.js" defer></script>
         <link rel="manifest" href="manifest.webmanifest">
     </head>
     <body>
         <div class="grid-container">
+            <div class="modal" id="modal">
+                Hello there!
+                <button onclick="closeFunc()">X</button>
+            </div>
             <div class="grid-item-1">A</div>
             <div class="grid-item-2">B</div>
             <div class="grid-item-3">C</div>
@@ -19,10 +24,22 @@
             <div class="grid-item-6">F</div>
             <div class="grid-item-7">G</div>
         </div>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             window.onload = setTimeout(function(){
                 alert('Hello there!');
             }, 5000);
+        </script> -->
+        <script type="text/javascript">
+            let element = document.getElementById('modal');
+            element.style.visibility = 'hidden';
+
+            window.onload = setTimeout(function(){
+                element.style.visibility = 'visible';
+            }, 5000);
+
+            function closeFunc() {
+                element.style.visibility = 'hidden';
+            }
         </script>
     </body>
 </html>
